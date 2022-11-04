@@ -4,7 +4,7 @@ from . import views
 
 urlpatterns = [
     # path("challenges", views.challenges) would send us to challenges/challenges
-    path("", views.index),
+    path("", views.index, name="index"),
     # month value is integer
     path("<int:month>", views.monthly_challenge_by_number),
     # month value is string
