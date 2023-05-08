@@ -11,10 +11,10 @@
     {% block content %}
     {% include "challenges/includes/headers.html" %}
     <ul>
-        {% for month in months%}
+        {% for month in months %}
         <!-- HARDCODED url <li><a href="/challenges/{{month}}">{{month|title}}</a></li>-->
            <li><a href="{% url "month-challenge" month=month %}">{{month|title}}</a></li>
         {%endfor%}
-    <ul>    
+    </ul>    
 {% endblock %}
 
